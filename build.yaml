@@ -22,7 +22,6 @@ include:
 
   - board: nice_nano_v2
     shield: miiunic_left nice_view
-    snippet: zmk-usb-logging
 
 ## To build with ZMK Studio support, uncomment the following block
 ## by removing the leading '#' from each line.
@@ -35,7 +34,6 @@ include:
 
   - board: nice_nano_v2
     shield: miiunic_right
-    snippet: zmk-usb-logging
 
   - board: nice_nano_v2
     shield: settings_reset
