@@ -8,12 +8,12 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp A  &kp B  &kp C  &kp D  &kp E  &kp F                &kp G  &kp H  &kp I  &kp J  &kp K  &kp L
-&kp M  &kp N  &kp O  &kp P  &kp Q  &kp R                &kp S  &kp T  &kp U  &kp V  &kp W  &kp X
-&kp Y  &kp Z  &kp A  &kp B  &kp C  &kp D                &kp E  &kp F  &kp G  &kp H  &kp I  &kp J
-                     &kp K  &kp L  &kp M  &kp N  &kp O  &kp P  &kp Q  &kp R
+         &kp TAB         &kp Q   &kp W   &kp F     &kp P     &kp B                              &kp J  &kp L    &kp U      &kp Y    &ud_sqt  &kp ESC   
+         &kp LCTRL       &kp A   &kp R   &kp S     &kp T     &kp G                              &kp M  &kp N    &kp E      &kp I    &kp O    &kp BSPC
+         &mt LSHFT LBRC  &kp Z   &kp X   &kp C     &kp D     &kp V    &kp C_MUTE       &kp C_PP &kp K  &kp H    &kp COMMA  &kp DOT  &kp DEL  &mt RSHFT RBRC
+                                            &kp LALT  &lthp SYM ESC  &kp SPACE          &kp ENTER  &lt NAV ESC  &kp RALT
             >;
-            sensor-bindings = <&inc_dec_kp A B &inc_dec_kp C D>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
         };
     };
 };
