@@ -1,4 +1,4 @@
-name: zmk-keyboard-miiunic
+name: zmk-keyboard-miiunici2c
 build:
   settings:
     board_root: .

@@ -1,4 +1,4 @@
-#include "miiunic.dtsi"
+#include "miiunici2c.dtsi"
 
 / {
     kscan0: kscan0 {
@@ -29,28 +29,7 @@
     col-offset = <7>;
 };
 
-&physical_layout_miiunic {
+&physical_layout_miiunici2c {
     kscan = <&kscan0>;
-};
-// == Input devices ==
-// Enabling input-split for its own input devices
-// Adding input devices and assigning them to input-split
-&input_split_right0 {
-    status = "okay";
-    device = <&input_device_right0>;
-};
-
-&encoder_right0 {
-    a-gpios = <&pro_micro 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-    b-gpios = <&pro_micro 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-    status = "okay";
-};
-
-// Assigning dummy pins to other part's encoders
-// just to satisfy the devicetree requirements.
-// No code will be compiled for these disabled encoders.
-&encoder_left0 {
-    a-gpios = <&pro_micro 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-    b-gpios = <&pro_micro 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
 };
 
